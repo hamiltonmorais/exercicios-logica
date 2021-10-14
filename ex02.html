@@ -1,0 +1,23 @@
+<meta charset = UTF-8>
+
+<script>
+// Escreva um programa que recebe o número de maçãs compradas e um indicador de fidelidade do cliente ao mercado(o cliente participa ou não do programa de fidelidade) Calcule e exiba em tela o valor total da compra.
+
+var fidelidade = prompt("Você tem cupom fidelidade? 1 para Sim e 2 para Não");
+
+var maca = Number(prompt("Quantidade de maçãs"));
+
+
+    if (maca < 12) {
+      document.write ("O valor a pagar é de: " + maca*0.30 + "R$" + "<br>"); 
+    } else
+      if(maca >=12 && maca <=24){
+        document.write("O valor a pagar é de: " + maca*0.25 + "R$" + "<br>");
+      } else
+        if (maca > 24) { 
+          document.write ("O Valor a pagar é de: " + maca*0.20 + "R$" +"<br>");
+          } 
+            if (fidelidade = 1) { 
+            document.write(" Se o cliente tiver cartão fidelidade o valor a pagar é de: " + maca*0.10 + "R$");
+            }
+</script>

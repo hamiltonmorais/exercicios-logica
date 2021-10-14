@@ -1,0 +1,38 @@
+<meta charset = "UTF 8">
+
+<script>
+var total=0;
+var totalpecas=0;
+var valorMaximo=10000;
+var valorMinimo=4000;
+var percentual=0;
+
+  for (let i=1; i<=20; i++)  {
+    var qtpecas = parseInt(prompt("Digite a quantidade de peças que o funcionário produziu: "));
+
+    totalpecas = totalpecas + qtpecas;
+
+    var salario = 1000+(qtpecas*50);
+
+    if(salario<valorMaximo && salario>valorMinimo) {
+
+      percentual++;
+    }
+
+    total = total + salario;
+
+    document.write(" A quantidade de peças do funcionário "+i+" foi: " + qtpecas + " E o salário é igual a " + salario + "<br>");
+
+    document.write("<br>");
+
+}
+
+document.write("-----------------------------------" + "<br>");
+
+document.write("O valor total da folha foi de: " + total + "R$" + "<br>");
+
+document.write("A quantidade de peças produzidas foi de " + totalpecas + "<br>");
+
+document.write("O percentual de funcionários que recebem mais que 4 e menos que 10 salários minimos é: " + percentual/50 + "%");
+
+</script>
